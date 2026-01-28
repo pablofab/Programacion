@@ -1,0 +1,28 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa determina el número máximo de libros consecutivos que Dimitri puede leer sin que el tiempo total supere un límite dado.
+
+FUNCIONAMIENTO
+
+Se leen dos enteros:
+
+n: cantidad de libros.
+
+t: tiempo máximo disponible para leer.
+
+Se lee un arreglo a de tamaño n, donde cada elemento representa el tiempo necesario para leer un libro.
+
+Se utilizan dos índices (inicio e i) y una variable acumuladora (tActual) para mantener una ventana de libros consecutivos.
+
+Para cada libro:
+
+Se suma su tiempo a tActual.
+
+Mientras el tiempo acumulado sea mayor que t, se eliminan libros desde el inicio de la ventana.
+
+En cada paso se actualiza el máximo número de libros consecutivos que se pueden leer sin exceder el tiempo disponible.
+
+RESULTADO
+
+El programa imprime un único entero:
+el máximo número de libros consecutivos que Dimitri puede leer dentro del tiempo t.

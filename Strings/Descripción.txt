@@ -1,0 +1,25 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa verifica si dos cadenas de texto pueden considerarse semejantes al intercambiar exactamente dos caracteres en una de ellas.
+
+FUNCIONAMIENTO
+
+Se leen dos cadenas de texto s y t.
+
+Si las cadenas tienen longitudes distintas, se imprime "NO" y el programa termina, ya que no pueden ser semejantes.
+
+Se recorren ambas cadenas carácter por carácter y se almacenan los índices donde los caracteres son diferentes.
+
+Luego se evalúa:
+
+Que existan exactamente dos posiciones distintas entre las cadenas.
+
+Que al intercambiar esos dos caracteres en una cadena, ambas queden iguales.
+
+Si se cumplen estas condiciones, se imprime "YES".
+En caso contrario, se imprime "NO".
+
+RESULTADO
+
+El programa indica si es posible transformar una cadena en la otra
+mediante el intercambio de dos caracteres.

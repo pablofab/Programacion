@@ -1,0 +1,39 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa responde múltiples consultas sobre dos cadenas de texto, calculando el mínimo número de operaciones necesarias para que ciertos subsegmentos de ambas cadenas sean anagramas entre sí.
+
+FUNCIONAMIENTO GENERAL
+
+Se lee un entero t, que indica la cantidad de casos de prueba.
+
+Para cada caso:
+
+Se leen dos enteros n y q.
+
+Se leen dos cadenas a y b de longitud n.
+
+Se procesan q consultas, donde cada una especifica un rango [l, r].
+
+PREPROCESAMIENTO
+
+Para cada cadena se construyen arreglos de frecuencia acumulada para las 26 letras del alfabeto:
+
+frec_a[c][i]: cantidad de veces que aparece la letra c en a[1..i].
+
+frec_b[c][i]: cantidad de veces que aparece la letra c en b[1..i].
+
+Esto permite obtener las frecuencias de cualquier subsegmento en tiempo constante.
+
+PROCESAMIENTO DE CONSULTAS
+
+Para cada consulta [l, r]:
+
+Se calcula cuántas veces aparece cada letra en a[l..r] y en b[l..r].
+
+Se suma la diferencia absoluta entre ambas frecuencias.
+
+El resultado final se divide entre 2, ya que una operación corrige una diferencia en ambas cadenas.
+
+RESULTADO
+
+Para cada consulta, el programa imprime el mínimo número de operaciones necesarias para que los subsegmentos indicados de a y b contengan las mismas letras.

@@ -1,0 +1,38 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa cuenta cuántas veces aparece un patrón dentro de una cadena de texto, utilizando el algoritmo KMP (Knuth–Morris–Pratt).
+
+FUNCIONAMIENTO GENERAL
+
+Se leen dos cadenas:
+
+cadena: texto donde se buscará el patrón.
+
+patron: cadena que se desea encontrar.
+
+El programa calcula e imprime el número total de ocurrencias del patrón dentro de la cadena.
+
+FUNCIÓN construirArregloPrefijos
+
+Esta función construye el arreglo de prefijos del patrón, usado por el algoritmo KMP:
+
+Cada posición indica la longitud del prefijo propio más largo que también es sufijo.
+
+Permite evitar comparaciones innecesarias durante la búsqueda.
+
+FUNCIÓN contarOcurrencias
+
+Esta función busca el patrón dentro de la cadena usando KMP:
+
+Recorre la cadena una sola vez.
+
+Cuando hay un desajuste, utiliza el arreglo de prefijos para saltar posiciones.
+
+Cada vez que se encuentra una coincidencia completa del patrón, se incrementa el contador.
+
+Permite detectar ocurrencias superpuestas.
+
+RESULTADO
+
+El programa imprime un único entero:
+la cantidad de veces que el patrón aparece en la cadena.

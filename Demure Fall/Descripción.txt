@@ -1,0 +1,34 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa determina la longitud máxima de una subsecuencia consecutiva sin elementos repetidos dentro de una lista de canciones.
+
+FUNCIONAMIENTO GENERAL
+
+Se lee un entero n, que representa la cantidad de canciones.
+
+Se lee una lista de n enteros, donde cada número identifica una canción.
+
+El programa busca la subsecuencia continua más larga en la que no se repita ninguna canción.
+
+MÉTODO UTILIZADO
+
+Se utiliza la técnica de ventana deslizante junto con un mapa para recordar posiciones:
+
+inicio marca el comienzo de la subsecuencia actual.
+
+fin recorre la lista de canciones.
+
+Un mapa guarda la última posición en la que apareció cada canción.
+
+ALGORITMO
+
+Si la canción actual ya apareció dentro de la ventana, se mueve el inicio para evitar repeticiones.
+
+Se actualiza la última posición de la canción actual.
+
+Se calcula el tamaño de la ventana actual y se mantiene el máximo encontrado.
+
+RESULTADO
+
+El programa imprime un único entero:
+la longitud máxima de una subsecuencia consecutiva sin canciones repetidas.

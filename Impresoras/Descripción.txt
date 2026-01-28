@@ -1,0 +1,44 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa calcula el tiempo mínimo necesario para producir al menos k figuras, utilizando varias impresoras que trabajan en paralelo.
+
+FUNCIONAMIENTO GENERAL
+
+Se leen:
+
+n: número de impresoras.
+
+k: cantidad de figuras que se desea producir.
+
+Se lee un arreglo tiempos, donde cada valor indica el tiempo que tarda una impresora en producir una figura.
+
+El programa determina el menor tiempo posible en el que se pueden producir al menos k figuras en total.
+
+FUNCIÓN puedeProducir
+
+Esta función verifica si es posible producir al menos k figuras en un tiempo x.
+
+Para cada impresora, se calcula cuántas figuras puede producir en x segundos.
+
+Se suman las figuras producidas por todas las impresoras.
+
+Si el total alcanza o supera k, la función retorna true.
+
+FUNCIÓN tiempoMinimoParaKFiguras
+
+Esta función utiliza búsqueda binaria sobre el tiempo:
+
+El límite inferior es 0.
+
+El límite superior es el tiempo de la impresora más rápida multiplicado por k.
+
+Se prueba un tiempo intermedio mid.
+
+Si es posible producir k figuras en ese tiempo, se intenta reducirlo.
+
+Si no es posible, se incrementa el tiempo.
+
+RESULTADO
+
+El programa imprime un único número:
+el tiempo mínimo necesario para producir al menos k figuras.

@@ -1,0 +1,47 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa permite realizar actualizaciones y consultas sobre una cadena de texto, utilizando un árbol de segmentos (Segment Tree) para manejar eficientemente la información.
+
+FUNCIONAMIENTO GENERAL
+
+Se lee una cadena s.
+
+Se lee un entero q, que indica la cantidad de consultas.
+
+Se construye un árbol de segmentos a partir de la cadena inicial.
+
+Se procesan las q consultas, que pueden ser de dos tipos.
+
+ESTRUCTURA SegmentTree
+
+El árbol de segmentos almacena, en cada nodo, un arreglo de tamaño 26 que representa la frecuencia de cada letra (de 'a' a 'z') en el segmento correspondiente.
+
+CONSTRUCCIÓN DEL ÁRBOL
+
+Cada hoja representa un carácter de la cadena.
+
+Cada nodo interno combina la información de sus dos hijos sumando las frecuencias.
+
+Esto permite conocer rápidamente las letras presentes en cualquier subsegmento.
+
+OPERACIONES
+
+ACTUALIZACIÓN (tipo 1)
+
+Se cambia el carácter en una posición específica de la cadena.
+
+El árbol se actualiza para reflejar el cambio de frecuencias.
+
+CONSULTA (tipo 2)
+
+Se consulta un rango [l, r] de la cadena.
+
+Se obtiene la frecuencia de cada letra en ese rango.
+
+Se cuenta cuántas letras distintas aparecen.
+
+RESULTADO
+
+Para cada consulta de tipo 2, el programa imprime el número de caracteres distintos en el subsegmento indicado.
+
+Las operaciones se realizan de forma eficiente gracias al uso del árbol de segmentos.

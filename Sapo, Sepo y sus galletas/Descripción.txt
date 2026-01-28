@@ -1,0 +1,38 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa verifica si una cadena de texto es compatible con una etiqueta numérica, manteniendo una correspondencia uno a uno entre letras y números.
+
+FUNCIONAMIENTO GENERAL
+
+Se leen varios casos de prueba.
+
+Para cada caso:
+
+Se lee un entero n y un arreglo etiqueta de tamaño n, que contiene números.
+
+Se lee un entero m, que indica cuántas cadenas se evaluarán.
+
+Para cada cadena, se verifica si cumple la relación con la etiqueta.
+
+FUNCIÓN verificaEtiqueta
+
+Esta función comprueba si una cadena s cumple las siguientes condiciones respecto a la etiqueta:
+
+La cadena y la etiqueta deben tener la misma longitud.
+
+Cada letra debe corresponder siempre al mismo número.
+
+Cada número debe corresponder siempre a la misma letra.
+
+La relación entre letras y números debe ser biyectiva (uno a uno).
+
+Si alguna de estas condiciones falla, la función retorna false.
+Si todas se cumplen, retorna true.
+
+RESULTADO
+
+Para cada cadena evaluada:
+
+Se imprime "YES" si la cadena es compatible con la etiqueta.
+
+Se imprime "NO" en caso contrario.

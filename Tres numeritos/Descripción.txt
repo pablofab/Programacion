@@ -1,0 +1,41 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa trabaja con varios casos de prueba.
+Para cada caso, determina si es posible seleccionar 3 números del arreglo cuya suma sea impar.
+
+IDEA PRINCIPAL
+
+La suma de tres números es impar si:
+
+los tres números son impares, o
+
+hay un número impar y dos números pares.
+
+FUNCIONAMIENTO
+
+Se lee un entero t, que indica la cantidad de casos de prueba.
+
+Para cada caso:
+
+Se lee n, el tamaño del arreglo.
+
+Se leen los n números del arreglo.
+
+Se guardan los índices (comenzando desde 1) de:
+
+los primeros 3 números impares encontrados,
+
+los primeros 2 números pares encontrados.
+
+Luego se evalúa:
+
+Si existen al menos 3 impares, se imprime "YES" y sus índices.
+
+Si no, pero existe al menos 1 impar y 2 pares, se imprime "YES" y esos índices.
+
+Si ninguna de las combinaciones es posible, se imprime "NO".
+
+RESULTADO
+
+El programa indica si es posible formar una terna con suma impar
+y muestra los índices de una combinación válida cuando existe.

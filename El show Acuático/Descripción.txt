@@ -1,0 +1,48 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa calcula la altura máxima uniforme a la que se pueden elevar varias columnas utilizando una cantidad limitada de agua.
+
+FUNCIONAMIENTO GENERAL
+
+Se leen varios casos de prueba.
+
+Para cada caso:
+
+Se lee n, el número de columnas.
+
+Se lee x, la cantidad total de agua disponible.
+
+Se leen las alturas iniciales de las columnas en el arreglo a.
+
+El programa determina la máxima altura común posible que pueden alcanzar todas las columnas sin superar el agua disponible.
+
+FUNCIÓN puedeLlenarTanque
+
+Esta función verifica si es posible elevar todas las columnas hasta una altura h usando como máximo x unidades de agua.
+
+Para cada columna cuya altura sea menor que h, se calcula cuánta agua se necesita para alcanzarla.
+
+Se acumula el agua necesaria.
+
+Si en algún momento se supera x, la función retorna false.
+
+Si no se excede el límite, retorna true.
+
+FUNCIÓN calcularAlturaMaxima
+
+Esta función utiliza búsqueda binaria para encontrar la mayor altura válida:
+
+El límite inferior es 1.
+
+El límite superior es la altura máxima actual más el agua disponible.
+
+Se prueba una altura intermedia mid.
+
+Si es posible alcanzar mid, se intenta una altura mayor.
+
+Si no es posible, se intenta una menor.
+
+RESULTADO
+
+Para cada caso de prueba, el programa imprime un número entero:
+la altura máxima uniforme que se puede lograr con el agua disponible.

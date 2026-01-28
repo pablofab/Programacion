@@ -1,0 +1,44 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa divide un arreglo de números en k subarreglos consecutivos de forma que la mayor suma entre los subarreglos sea mínima.
+
+FUNCIONAMIENTO GENERAL
+
+Se leen dos enteros:
+
+n: tamaño del arreglo.
+
+k: número máximo de subarreglos permitidos.
+
+Se lee un arreglo arr de n números enteros.
+
+El programa calcula e imprime el mínimo valor posible de la suma máxima entre los subarreglos resultantes.
+
+FUNCIÓN esValidaParticion
+
+Esta función verifica si es posible dividir el arreglo en a lo más k subarreglos tal que la suma de cada uno no supere un valor dado maxSum.
+
+Recorre el arreglo acumulando la suma actual.
+
+Si al agregar un elemento se supera maxSum, se inicia un nuevo subarreglo.
+
+Si el número de subarreglos supera k, la partición no es válida.
+
+FUNCIÓN particionMinMaxSuma
+
+Esta función encuentra la solución óptima usando búsqueda binaria:
+
+El límite inferior (l) es el valor máximo del arreglo.
+
+El límite superior (r) es la suma total de todos los elementos.
+
+Se prueba un valor intermedio mid como suma máxima permitida.
+
+Si la partición es válida, se intenta reducir ese valor.
+
+Si no es válida, se aumenta el valor.
+
+RESULTADO
+
+El programa imprime un único número:
+el mínimo posible de la mayor suma entre los k subarreglos consecutivos.

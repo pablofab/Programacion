@@ -1,0 +1,49 @@
+DESCRIPCIÓN DEL PROGRAMA
+
+Este programa procesa cadenas de texto aplicando operaciones de borrado especiales según ciertos caracteres de control.
+
+FUNCIONAMIENTO GENERAL
+
+Se lee un entero t, que indica la cantidad de casos de prueba.
+
+Para cada caso:
+
+Se lee una cadena input.
+
+La cadena se procesa carácter por carácter para construir el resultado final.
+
+REGLAS DE PROCESAMIENTO
+
+Si el carácter es 'b':
+
+Se elimina la letra minúscula más a la derecha que haya sido agregada previamente.
+
+Si el carácter es 'B':
+
+Se elimina la letra mayúscula más a la derecha que haya sido agregada previamente.
+
+Si es cualquier otro carácter:
+
+Se agrega al resultado.
+
+Se registra su posición según sea minúscula o mayúscula.
+
+ESTRUCTURAS UTILIZADAS
+
+Dos colas de prioridad:
+
+Una para posiciones de letras minúsculas.
+
+Otra para posiciones de letras mayúsculas.
+
+Un vector para construir el resultado de forma incremental.
+
+CONSTRUCCIÓN DEL RESULTADO
+
+Los caracteres eliminados se marcan como inválidos.
+
+Al final, se recorre el resultado parcial y se forma la cadena final sin los caracteres eliminados.
+
+RESULTADO
+
+Para cada caso de prueba, el programa imprime la cadena resultante después de aplicar todas las operaciones.
